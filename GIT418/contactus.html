@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<!--
+	GIT417-75041: Chapter 9 Case Project
+	Author: Brittany Carter
+	Date: October 28, 2020
+-->
+<meta charset="utf-8">
+<meta name="description" content="Weathering With You Movie">
+<meta name="author" content="Brittany Carter">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="modernizr.custom.05819.js"></script>
+<title>Weathering With You</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">  
+<link href="weathering.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+	<a href="index.html"><img class="img-fluid" src="media/logomed.png" alt="Weathering With You Title"></a>
+		<nav class="navbar navbar-expand-lg  navlinks">
+		<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto navlinks">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="plot.html">Plot</a>
+      </li>
+	<li class="nav-item">
+        <a class="nav-link" href="characters.html">Characters</a>
+      </li>
+	<li class="nav-item">
+        <a class="nav-link" href="director.html">Director</a>
+      </li>
+	<li class="nav-item active current">
+        <a class="nav-link" href="contactus.html">Contact<span class="sr-only">(current)</span></a>
+      </li>
+	<li class="nav-item">
+        <a class="nav-link" href="security.html">Security</a>
+      </li>
+	<li class="nav-item">
+        <a class="nav-link" href="songlist.html">SongList</a>
+      </li>
+	</ul>
+  </div>
+</nav>
+	</header>
+	<main id="contactus">
+		<div class="container">
+			<div class="row">
+				<div class="offset-md-3 col-md-8">
+					<section class="contactForm">
+			<form action="results.html">
+				<fieldset id = "contact">
+				<legend><h2>Questions? <br>Get in touch with us:</h2></legend>
+					<div id="errorMessage"></div>
+					<label for="first_name" style="display: none">First Name</label>
+				<input type="text" id="first_name" name="first_name" placeholder="First Name" required minlength="3">
+					<label for="last_name" style="display: none">Last Name</label>
+				<input type="text"  id="last_name" name="last_name" placeholder="Last Name" required minlength="3"><br>
+					<label for="email" style="display: none">Email</label>
+				<input type="text" id="email" name="email" placeholder="Email" required><br>
+					<label for="subject" style="display: none">Subject</label>
+				<input type="text" id="subject"  name="subject" placeholder="Subject" required><br><br>
+					<label for="weather">Favorite Weather</label><br>
+				<input type="checkbox" id="weather1" name="weather" value="sunny">
+			<label for="weather1"> Sunny</label>
+			<input type="checkbox" id="weather2" name="weather" value="cloudy">
+			<label for="Weather2"> Cloudy</label>
+			<input type="checkbox" id="weather3" name="weather" value="rainy">
+			<label for="weather3"> Rainy</label><br><br>
+					<label for="timeofday">Favorite Time of Day</label><br>
+			<input type="radio" id="morning" name="timeofday" value="morning">
+			<label for="morning">Morning</label>
+			<input type="radio" id="afternoon" name="timeofday" value="afternoon">
+			<label for="female">Afternoon</label>
+			<input type="radio" id="night" name="timeofday" value="night">
+			<label for="night">Night</label><br><br>
+				<label for="characters">Favorite Character</label>
+				<select id="character" name="characters">
+  					<option value="Hodaka Morishima">Hodaka Morishima</option>
+  					<option value="Hina Amano">Hina Amano</option>
+					<option value="Nagisa (Nagi) Amano">Nagisa (Nagi) Amano</option>
+  					<option value="Keisuke Suga">Keisuke Suga</option>
+ 
+				</select><br>
+				<textarea name="messagetxt" id="message" placeholder="Enter message at least 8 characters" required minlength="4"></textarea><br>
+					<input type="submit" class="submit" value="Send" id="submitBtn">
+				</fieldset>
+			</form>
+			<div id="errorText" class="pt-2"></div>
+		</section>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+	<footer>
+		<p>Site for educational purposes only.</p>
+	</footer>
+	<script src="git418case9.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

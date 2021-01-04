@@ -1,0 +1,127 @@
+@charset "utf-8";
+#wrapper {
+	margin: auto;
+	width: 80%;
+	background-color: #FB5196;
+}
+header h1 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	
+	font-size: 40px;
+	padding-top: 20px;
+	padding-right: 8em;
+	padding-left: 1em;
+	text-shadow: 5px 5px 5px white;
+}
+
+header {
+	height: 150px;
+	background-image: url("images/ocanimeblog.banner.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #FB5196;
+}
+
+body {
+	background-color: #FB5196;
+	color: #520122;
+}nav p {
+	text-align: center;
+	padding-top: 4px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+nav {
+	background-color: #F184BE;
+	height: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+nav a:link {
+	text-decoration: none;
+	color: #620229;
+}
+main {
+	background-color: #F184BE;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	border-radius: 20px;
+	margin-top: 20px;
+	height: 39em;
+	text-align: left;
+	font-size: 16px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	width: 94%;
+}
+
+main img {
+	border: 2px solid #FB5196;
+	border-radius: 20px;
+	float: left;
+	margin-right: 20px;
+	height: 500px;
+}
+
+
+nav a:hover {
+	text-decoration: line-through;
+	color: pink;
+}
+nav a:active {
+	color: pink;
+}
+nav a:visited {
+	color: pink;
+}
+#rensho {
+}
+
+footer {
+	background-color: #F184BE;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+@media (max-width: 649px){
+header h1  {
+	width: 20%;
+	font-size: 24px;
+}
+main {
+	height: 0%;
+
+}
+main h2 {
+	clear: both;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+main img {
+	clear: both;
+	padding-left: 0px;
+	margin-left: 27px;
+	padding-top: 0px;
+	width: 85%;
+}
+main p {
+	clear: both;
+	padding-top: 0px;
+}
+
+
+
+
+
+
+}

@@ -1,0 +1,239 @@
+@charset "utf-8";
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+	width: 100%;
+	background-color: #870406;
+	background-image: -o-linear-gradient(270deg,rgba(255,96,80,1.00) 0%,rgba(135,4,6,1.00) 100%);
+	background-image: -webkit-linear-gradient(270deg,rgba(255,96,80,1.00) 0%,rgba(135,4,6,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,96,80,1.00) 0%,rgba(135,4,6,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,96,80,1.00) 0%,rgba(135,4,6,1.00) 100%);
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+	background-color: #870406;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,96,80,1.00) 0%,rgba(135,4,6,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,96,80,1.00) 0%,rgba(135,4,6,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,96,80,1.00) 0%,rgba(135,4,6,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,96,80,1.00) 0%,rgba(135,4,6,1.00) 100%);
+	padding: 30px;
+	width: 95%;
+}
+header {
+	text-align: center;
+	font-size: xx-large;
+	font-weight: 400;
+	font-style: normal;
+	font-family: aclonica, Impact, "Franklin Gothic Demi Cond", Arial, sans-serif;
+	text-shadow: 2px 0px 5px #060000;
+}
+nav {
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+}
+#navlink .current   {
+	background-color: #1B0101;
+}
+
+#navlink li  {
+	padding: 0px 10px 5px;
+	background-color: #980204;
+	border: 1px solid #000000;
+	font-family: abel, "Arial Black", "Century Gothic", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+
+#navlink {
+	list-style: none;
+	font-size: 18pt;
+	font-family: abel, "Arial Narrow", "Agency FB", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+
+}
+
+#navlink a:link  {
+	text-decoration: none;
+	color: #030303;
+	text-transform: uppercase;
+}
+
+
+#navlink a:hover, a:active, a:focus {
+	color: #1F0001;
+	text-decoration: line-through;
+}
+#navlink a:visited {
+	text-decoration: underline;
+	color: #010101;
+}
+#navlink .current a {
+	color: #980204;
+}
+main {
+	background-color: #980204;
+	border: 1px solid #000000;
+	margin-top: 20px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	padding-right: 20px
+'
+';
+	padding-right: 9px;
+	padding-left: 15px;
+	margin-left: 15px;
+}
+footer {
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background-color: #980204;
+	font-size: 8pt;
+	padding: 6px 9px 6px 15px;
+	margin-left: 15px;
+	width: 100%;
+	text-align: center;
+}
+main img  {
+	display: inline;
+	width: 80%;
+	padding-left: 70px;
+	margin-top: 30px;
+}
+main h1 {
+	text-align: center;
+	font-family: aclonica, Impact, "Franklin Gothic Demi Cond", Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	padding-top: 7px;
+}
+main p {
+	text-align: center;
+	margin-right: 15px;
+	color: #0A0000;
+}
+main h2 {
+	text-align: center;
+	font-family: abel, "Arial Narrow", "Agency FB", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+a:link {
+	text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #0A0000;
+}
+a:hover , a:active, a:focus{
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: line-through;
+}
+.ep h2 a:link  {
+	font-family: abel, "Arial Narrow", "Agency FB", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 680px){
+#navlink li {
+	display: inline;
+	-webkit-box-shadow: 5px 0px 30px #F38283;
+	border: 4px solid #000000;
+	box-shadow: 5px 0px 30px #F38283;
+}
+nav {
+	text-align: left;
+	font-style: normal;
+	font-weight: 700;
+	margin-right: 0px;
+	padding-left: 0px;
+	position: absolute;
+	margin-top: -10px;
+}
+main {
+	border: 3px solid #000000;
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+footer {
+	border: 3px solid #000000;
+}
+main img {
+	display: inline;
+	float: left;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-left: 10px;
+	width: 40%;
+}
+.ep  {
+	position: static;
+	padding-left: 20em;
+	text-align: left;
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+@media (min-width:1000px){
+.ep   {
+	position: static;
+	padding-left: 40em;
+	text-align: left;
+}
+
+}
+#ep {
+}
+#enma {
+}

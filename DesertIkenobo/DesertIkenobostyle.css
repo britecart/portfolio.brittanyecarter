@@ -1,0 +1,666 @@
+@charset "UTF-8"; 
+/* by Brittany Carter for GIT414 18878 */
+/* global styles */
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+}
+body {
+    background-color: #D0CACA;
+	overflow-x: hidden;
+}
+header, nav li, .classInfo {
+    background-color: #70A370;	
+}
+form label{
+	display:none;
+}
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+h3{
+	font-weight: 300;
+}
+h4{
+	font-weight: 500;
+}
+nav li, .classInfo li, .mContactInfo li, .desContactInfo li {
+	list-style: none;
+}
+nav li a, .classInfo, .classInfo a{
+	color: #131024;
+}
+nav li a{
+	text-decoration: none;
+}
+nav .current a, li a:hover {
+	text-decoration: underline;
+}
+nav .current > a {
+   	pointer-events: none;
+   	cursor: default;  
+}
+
+.navlinks{
+	padding-top: 2%;
+	margin-left: 25%;
+}
+.navlinks li {
+	display: inline;
+	padding-right: 2%;
+	padding-left: 2%;
+	font-size: 30px;
+}
+header{
+	overflow: auto;
+}
+header img{
+	width: 15%;
+	float: left;
+}
+p, h3, footer, .contactForm input, .contactForm textarea, .submit, .desContactInfo,  .mContactInfo {
+	font-family: 'Roboto', sans-serif;
+}
+footer {
+    	background-color: #131024;
+    	color: #D0CACA;
+    	padding-top: 2%;
+    	padding-right: 3%;
+    	padding-left: 3%;
+    	padding-bottom: 1%;
+	text-align: center;
+}
+#home{
+    	color: #D0CACA;
+	background-image: url(wbpictures/featured.jpg);
+    	background-size: cover;
+	height: 650px;
+}
+#home h1 a, h3 a{
+	color:#80B980;
+	text-decoration: none;
+}
+#home h1 a:hover, h3 a:hover{
+	text-decoration: underline;
+}
+#home h1, h2{
+	font-size: 40px;
+	font-weight: 300;
+}
+#home img {
+	display: none;
+}
+#about{
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: 100%;
+}
+iframe{
+	width: 100%;
+	height: 500px;
+}
+#about h1, #contact h1, #class h1, #class h3{
+	text-align: center;
+}
+
+#about h1, #contact h1, #class h1{
+	font-size: 42px;
+}
+
+#about img, #class img, iframe{
+	border: 6px solid #70A370;
+}
+
+#navMobile{
+	display: none;
+}
+
+#about section, #class section, #contact section {
+    text-align: justify
+}
+
+
+#class h3{
+	font-size: 19px;
+	padding-bottom: 3%;
+}
+#class p, #class h4, .classInfo{
+	font-size: 18px;
+}
+
+#class section{
+	margin-top: 4%;
+	margin-bottom: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+#class img{
+	margin-left: 5%;
+	margin-right: 2.5%;
+	margin-top: -2%;
+	width: 30%;
+	float: left;
+}
+
+#about h1, #class h1, #class h3, #contact h1, .desContactInfo, .mContactInfo, .history, .contactForm input{
+	color:#131024;
+}
+#first_name, #last_name, #email, #subject{
+	height: 30px;
+}
+#last_name, #first_name{
+	width: 44%;
+}
+#last_name{
+	margin-left: 4%;
+}
+#email, #subject, .contactForm form textarea{
+	width: 95%;
+}
+.contactForm form textarea{
+	height: 100px;
+}
+.contactForm form input, .contactForm form textarea{
+	font-size: 19px;
+}
+.contactForm form input, .contactForm form textarea{
+    	border-bottom-style: hidden;
+    	font-weight: 500;
+    	border-radius: 3px;
+	margin-top: 3%;
+	padding: 1%;
+	overflow: hidden;
+}
+.contactForm fieldset{
+	border:0;
+}
+.contactForm legend{
+	margin-top: -3%;
+}
+.class1, .class2, .class3{
+	padding-top: 0.5%;
+	padding-bottom: 1%;
+	padding-right: 3.5%;
+	padding-left: 1%;
+	
+}
+.class1 p{
+	margin-top: -2%;
+}
+.class1:after, .class2::after, .class3::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+.classInfo{
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.classInfo ul li{
+	padding-bottom: 0.5%;
+}
+
+.classInfo li a {
+	font-weight: 600;
+}
+.mContactInfo li, .desContactInfo li{
+	font-weight: 300;
+}
+.banner{
+   	background-image: url(wbpictures/banner.jpg);
+    	background-size: cover;
+	height: 350px;
+	margin-left: -3%;
+	margin-right: -3.3%;
+	margin-top: -3%;
+	}
+.desktopSocial{
+	padding-right: 3%;
+	margin-top: -5%;
+}
+.desktopSocial img{
+	width: 4%;
+	padding-right: 1%;
+	float: right;
+}
+.flex{
+	display: flex;
+	justify-content: flex-start;
+	flex-basis: 200%;
+}
+.map, .contactForm{
+	padding: 2%;
+	width: 50%;
+}
+.desContactInfo{
+	display: block;
+	font-size: 18px;
+}
+.desContactInfo li h3{
+	display: inline;
+}
+.desContactInfo li h3::after{
+	content: ' ';
+	white-space: pre;
+}
+
+.mContactInfo{
+	display: none;
+}
+.history{
+	padding-top: 1%;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-bottom: 2%;
+}
+.mission{
+	padding-top: 7%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-bottom: 1%;
+}
+.mission, .class1, .class2, .class3, .map, .contactForm {
+	background-color: #463B87;
+	color: #D0CACA;
+}
+
+.mobileSocial {
+	display: none;
+}
+.submit {
+	width: 20%;
+	background-color: #70A370;
+	margin-left: 78%;
+}
+.tagline{
+	background-color: #463B87;
+    	overflow: auto;
+	margin-top: 5%;
+	padding-right: 4%;
+	padding-left: 2%;
+	float:right;
+}
+
+/* mobile and tablet shared styles */
+@media screen and (min-width:320px) and (max-width:1023px){
+	nav{
+		padding-left: 0%;
+	}
+	.navlinks{
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+	}
+	.navlinks li:last-child{
+		border-bottom-left-radius:4px;
+        border-bottom-right-radius:4px;
+	}
+	#navMobile{
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+		opacity: 0;
+		background-color: black;
+		cursor: grab;
+	}
+	label:hover{
+		color:#70A370;
+	}
+	#navMobile:checked ~ .navlinks  li{
+    	display: block;
+		overflow: auto;
+		text-align: center;  
+	}
+		#navMobile:checked + label:before{
+		position:relative;
+		right:calc(-160px);
+  		opacity:1;
+	}
+	#navMobile:not(checked) ~ .navlinks  li {
+		display: none;	
+	}
+	#home{
+		height: auto;
+	}
+	
+	#home img, .map, .contactForm {
+		width: 100%;
+		padding: 0%;
+	}
+	#about, #navMobile, #home img, .flex{
+		display: block;	
+	}
+	
+	#class section{
+		margin-top: -5%;
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-bottom: 0%;
+	}
+	
+	footer{
+		text-align: left;
+	}
+	footer p{
+		margin-top: -5%;
+	}
+	.mContactInfo{
+		display: block;
+	}
+	
+	.classInfo, .mContactInfo {
+		text-align: justify;
+	}
+   .classInfo ul, .mContactInfo ul{
+		padding-left: 1%;
+	}
+	.classInfo ul li{
+		padding-bottom: 2.5%;
+	}
+	.desktopSocial{
+		display: none;
+	}
+	.desContactInfo{
+		display: none;
+	}
+	.mobileSocial{
+		display: block;
+		overflow:auto;
+	}
+	.flex{
+		overflow: hidden;
+	}
+	.tagline, #class img {
+    	float: none;		
+	}
+}
+
+/* mobile only styles */
+@media screen and (min-width:320px) and (max-width:700px){
+	header{
+		display: grid;
+		grid-gap: 10%;
+		padding-bottom: 2%;
+		overflow: hidden;
+	}
+	header img{
+		padding:1.5%;
+    	width: 45%;	
+	}
+	.navlinks{
+		padding-bottom: 7%;
+	}
+	label::before{
+		height:9px;
+        	width:110px;
+        	background-color: #131024;
+        	display:inline-block;
+        	content:"";
+        	box-shadow:0px -25px 0px 0px  #131024,
+             	0px -50px 0px 0px #131024;
+       		transition:all .5s;
+        	position:relative;
+        	opacity:0.8;
+	}
+	label{
+		margin-top: -24%;
+		margin-left: 65%;
+    		display:block;
+    		padding:3%;
+    		cursor: default; 
+	}
+
+	#navMobile{
+    		margin-left: 60%;
+    		margin-top: -20%;
+		width: 40%;
+		height: 80px;
+	}
+	 #navMobile:checked ~ .navlinks  li{
+		font-size: 26px;
+    		margin-top: 16%;
+    		padding-top: 1%;
+    		padding-right: 6%;
+    		padding-left: 1%;
+    		padding-bottom: 7%;
+    	  
+	}
+
+	#about section, #class section, .map, .mContactInfo {
+    		padding-top: 5%;
+    		padding-right: 7%;
+    		padding-left: 5%;
+    		padding-bottom: 5%;
+    		text-align: justify;
+	}
+	
+	#home h1, h2{
+		font-size: 26px;
+	}
+	h1{
+		font-size: 40px;
+	}
+	h4{
+		font-size: 18px;
+	}
+	iframe{
+		width: 85%;
+		height: 400px;
+	}
+	
+	footer p{
+		padding-top: 4.5%;
+	}
+	#about h1{
+		padding-left: 0%;
+	}
+	#about h1, #class h1, #class h3, #contact h1{
+		text-align: left;
+		padding-right: 6%;
+	}
+	#class h1, #class h3, #contact h1{
+	padding-left: 6%;
+	}
+	#class img{
+		width: 75%;
+	}
+	.banner{
+    	height: 200px;
+	}
+	 
+	.classInfo ul, .mContactInfo ul{
+		font-size: 18px;
+	}
+
+	
+	.mContactInfo ul li h3{
+		padding: 0%;
+		margin-bottom: -0.2%;
+	}
+
+	#first_name, #last_name, #email, #subject{
+		height: 20px;
+	}
+	#last_name, #first_name{
+		width: 41%;
+	}
+	#last_name{
+		margin-left: 9%;
+	}
+	#email, #subject, .contactForm form textarea{
+		width: 95%;
+	}
+	.contactForm form textarea{
+		height: 100px;
+	}
+	.contactForm form input, .contactForm form textarea{
+		font-size: 18px;
+	}
+	.history img{
+		width: 95%;
+	}
+
+	.mobileSocial img{
+    		width: 20%;
+    		float: right;
+    		padding: 2%;
+	}
+	.submit{
+		margin-left: 78%;
+		height: 30px;
+		font-weight: 700;
+	}
+	.tagline{
+    		margin-top: -1%;
+    		padding-left: 7%;
+		padding-right: 3%;
+	}
+}
+
+/* tablet only styles */
+@media screen and (min-width:701px) and (max-width:1023px){
+	header{
+		display: grid;
+		grid-gap: 5%;
+		padding-bottom: 2%;
+		overflow: hidden;
+	}
+	header img{
+		padding:1.5%;
+    		width: 35%;	
+	}
+
+	label::before{
+		height:10px;
+       		width:140px;
+        	background-color: #131024;
+       		display:inline-block;
+        	content:"";
+        	box-shadow:0px -30px 0px 0px  #131024,
+             	0px -60px 0px 0px #131024;
+        	transition:all .5s;
+        	position:relative;
+        	opacity:0.8;
+	}
+	label{
+		margin-top: -15%;
+		margin-left: 70%;
+		margin-right: 5%;
+    		display:block;
+    		padding:3%;
+    		cursor: default; 
+	}
+
+	#navMobile{
+    		margin-left: 60%;
+    		margin-top: -10%;
+		width: 35%;
+		height: 60px;
+	}
+	 #navMobile:checked ~ .navlinks  li{
+    		display: block;
+		overflow: auto;
+		font-size: 40px;
+    	margin-top: 5%;
+		margin-bottom: 12%;
+    		padding-top: 1%;
+    		padding-right: 6%;
+	}
+	
+	#home h1, h2{
+		font-size: 32px;
+	}
+	h1, #class h3{
+		margin-left: 10%;
+	}
+	h1{
+		font-size: 45px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	p{
+		font-size: 19px;
+	}
+	iframe{
+		margin-left: 1%;
+		width: 85%;
+		height: 400px;
+	}
+
+	#class img {
+		margin-left: 10%;
+		width: 60%;
+	}
+	#about section, #class section, .flex section {
+   		padding-top: 5%;
+    		padding-bottom: 5%;
+    		text-align: justify
+	}
+	#about section, #class section {
+    		padding-right: 10%;
+    		padding-left: 10%;
+	}
+	#about h1{
+		margin-left: -10%;
+	}
+	.flex section{
+   		padding-right: 5%;
+    		padding-left: 5%;
+	}
+	
+	.banner{
+    		height: 250px;
+	}
+	 
+	.classInfo ul, .mContactInfo ul{
+		font-size: 20px;
+	}
+	
+	.mContactInfo ul li h3{
+		padding: 0%;
+		margin-bottom: -0.2%;
+	}
+	
+	.history img{
+		width: 85%;
+	}
+	#first_name, #last_name, #email, #subject{
+		height: 30px;
+	}
+	#last_name, #first_name{
+		width: 35%;
+	}
+	#last_name{
+		margin-left: 11.4%;
+	}
+	#email, #subject, .contactForm form textarea{
+		width: 85%;
+	}
+	.contactForm form textarea{
+		height: 150px;
+	}
+	.contactForm form input, .contactForm form textarea{
+		font-size: 20px;
+	}
+	.mobileSocial img{
+    		width: 10%;
+    		float: right;
+    		padding: 2.5%;
+	}
+	.submit{
+		margin-left: 68%;
+		height: 40px;
+		font-weight: 700;
+	}
+	.tagline{
+    		margin-top: -1%;
+    		padding-left: 7%;
+		padding-right: 3%;
+	}
+}

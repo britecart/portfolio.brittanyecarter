@@ -1,0 +1,743 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<title>PhET</title>
+
+<style>
+/* global styles*/
+	@font-face{
+	font-family:Roboto;
+	src:url("Roboto-Regular.ttf")
+	}
+	html, body{
+		margin:0;
+	}
+	body{
+		font-family: Roboto;
+	}
+	 header{
+    	overflow: hidden;
+    	border-bottom: 5px solid #00A3E0;
+      }
+	
+	p{
+		padding-top:5%;
+	}
+	main{
+		padding-bottom: 3%;
+	}
+	 main a{
+		color: #00A3E0;
+	}
+	main a:hover, main a:active{
+		color: #000000;
+	}
+	.btn {
+    	border-radius: 20px;
+		padding:0;
+	
+	}
+
+	.btn img{
+		width: 101.3%;
+		margin-left: -0.7%;
+		margin-bottom: -4%;
+		
+	}
+	.btn:focus{
+		box-shadow: 0,0,0, 0;
+	}
+	 .mainbodyph, .btnphy:hover{
+		border: 2px solid #8C1D40;
+	}
+	.mainbodymt, .btnmat:hover {
+    border: 2px solid #FFC627;
+	}
+	.mainbodych, .btnche:hover {
+		border: 2px solid #00A3E0;
+	}
+	.mainbodyea, .btnear:hover{
+		border: 2px solid #78BE20;
+	}
+	.mainbodybi, .btnbio:hover{
+		border: 2px solid #FF7F32;
+	}
+	
+/* mobile screen size*/
+	@media screen and (min-width:200px) and (max-width: 575px){
+		.sslogo{
+		width: 14%;
+		}
+		.phetlogo{
+    		width: 28%;
+		}
+		.culogo{
+		width: 10%;
+		margin-top: -3%;
+		}
+		main, main a{
+			font-size: 19px;
+		}
+		.cardthumb{
+			width: 16em;
+		}
+		.btn {
+    		width: 55%;
+		}
+		
+		
+		.btnphy, .btnear, .btnmat, .btnche, .btnbio {
+			margin-left: 18%;
+		}
+		.mainbodyph, .mainbodymt, .mainbodych, .mainbodyea, .mainbodybi{
+			width: 18em;
+		}
+	    	.mainbodymt, .mainbodych, .mainbodybi, .mainbodyph, .mainbodyea{
+			margin-left: -0.8%;
+			
+		}
+	}
+/* special width for 400px mobile screen size*/
+	@media screen and (min-width:400px) and (max-width: 576px){
+		.mainbodyph, .mainbodymt, .mainbodych, .mainbodyea, .mainbodybi{
+			width: 20em;
+			
+		}
+	}
+/* small tablet screen size*/
+	@media screen and (min-width: 577px)and (max-width: 992px){
+		.sslogo{
+		width: 10%;
+		}
+		.phetlogo{
+    		width: 20%;
+		}
+		.culogo{
+		width: 6%;
+		}
+		.mainbodyph, .mainbodymt, .mainbodych, .mainbodyea, .mainbodybi{
+		width: 43em;
+		}
+		
+		.btn {
+    		width: 30%;
+		margin-left: 30%;
+		}
+		
+	}
+	/* large tablet screen size and computer*/
+	@media screen and (min-width: 993px) {
+		.sslogo{
+		width: 6%;
+		}
+		.phetlogo{
+    		width: 12%;
+		}
+		.culogo{
+		width: 4%;
+		}
+		main, main a{
+			font-size: 20px;
+		}
+		.mainbodyph, .mainbodymt, .mainbodych, .mainbodyea, .mainbodybi{
+			width: 60em;
+		}
+		
+		.cardthumb{
+			width: 18rem;
+		}
+		.btn {
+    			width: 24%;
+			margin-left: 30%;
+		}
+	
+	}
+	/* extra large screen size card body width*/
+	@media screen and (min-width: 1025px){
+		.mainbodyph, .mainbodymt, .mainbodych, .mainbodyea, .mainbodybi{
+			width: 56em;
+		}
+	}
+      
+	</style>
+	</head>
+<body>
+	<header class="pb-1 pt-2 pl-3">
+		<!-- link to SolarSpell homepage -->
+		<a href="#"><img class="sslogo mt-1 mr-2" src="images/logo_small.png" alt="SolarSpell logo"></a>
+		<!--logos-->
+        <img class="phetlogo pr-1" src="images/phet-logo-trademarked.png" alt="PhET Home Page"/>
+        <img class="culogo pt-3 " src="images/cu_logo.png" alt="University of Colorado"/>
+    
+	</header>
+	<main class="container pt-3">
+		<div class="row">
+			<!--Physics section-->
+			<div class="col-12">
+				<p><!--Physics button-->
+					<a class="btn btnphy shadow-none" data-toggle="collapse" href="#physics" role="button" aria-expanded="false" aria-controls="physics"><img src="images/physics-icon.png" alt="physics icon"></a>
+				</p>
+				<!--Physics cards-->
+				<div class="collapse multi-collapse " id="physics">
+					<div class="card card-body mainbodyph">
+						<div class="row">
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/atomic-interactions_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/atomic-interactionsthumbnail.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/atomic-interactions-html-guide_en.pdf" target="_blank"> Atomic Interactions Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/build-an-atom_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/build-an-atom.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/build-an-atom-html-guide.pdf" target="_blank">Build An Atom Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/color-vision_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/color-vision.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/color-vision-html-guide.pdf" target="_blank">Color Vision Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/coulombs-law_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/coulombs-law.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/coulombs-law-html-guide_en.pdf" target="_blank"> Coulomb's Law Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/energy-forms-and-changes_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/energy-forms-and-changes.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/energy-forms-and-changes-html-guide_en.pdf" target="_blank"> Energy Forms and Changes Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+							<div class="card cardthumb">
+								<a href="en/simulations/faradays-law_en.html" target="_blank">
+									<img class="card-img-top" src="images/thumbnails/faradays-law.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/faradays-law-html-guide_en.pdf" target="_blank">Faraday's Law Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+							<div class="card cardthumb">
+								<a href="en/simulations/hookes-law_en.html" target="_blank">
+									<img class="card-img-top" src="images/thumbnails/hookes-law.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/hookes-law-html-guide.pdf" target="_blank">Hooke's Law Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+							<div class="card cardthumb">
+								<a href="en/simulations/john-travoltage_en.html" target="_blank">
+									<img class="card-img-top" src="images/thumbnails/john-travoltage.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text"><a href="../PhET Teaching Resources/john-travoltage-html-guide_en.pdf" target="_blank">John Travoltage Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/molecules-and-light_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/molecules-and-light.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text">
+										<a href="../PhET Teaching Resources/molecules-and-light-html-guide.pdf" target="_blank"> Molecule and Light Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/ohms-law_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/ohms-law.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text">
+										<a href="../PhET Teaching Resources/ohms-law-html-guide_en.pdf" target="_blank">Ohm's Law Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+							<div class="card cardthumb">
+								<a href="en/simulations/pendulum-lab_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/pendulum-lab.png" alt="Card image cap"></a>
+  								<div class="card-body">
+										<p class="card-text">
+										<a href="../PhET Teaching Resources/pendulum-lab-html-guide_en.pdf" target="_blank">Pendulum Lab Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/rutherford-scattering_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/rutherford-scattering.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/rutherford-scattering-html-guide_en.pdf" target="_blank"> Rutherford Scattering Teaching Resource </a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/states-of-matter_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/states-of-matter.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/states-of-matter-basics-html-guide_en.pdf" target="_blank">States of Matter Teaching Resource 1</a><a href="../PhET Teaching Resources/states-of-matter-html-guide_en.pdf" target="_blank"> and 2</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/under-pressure_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/under-pressure.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/under-pressure-html-guide_en.pdf" target="_blank">Under Pressure Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/wave-interference_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/wave-interference.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/wave-interference-html-guide_en.pdf" target="_blank">Wave Interference Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/wave-on-a-string_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/wave-on-a-string.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/wave-on-a-string-html-guide_en.pdf" target="_blank">Wave on a String Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div>
+						</div><!--row -->
+					</div><!--card-->
+				</div>
+			</div><!--column-->
+			<!--Math section-->
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<p><!--Math button-->
+					<a class="btn btnmat mt-1 shadow-none" data-toggle="collapse" href="#math" role="button" aria-expanded="false" aria-controls="math"><img src="images/math-icon.png" alt="math icon"></a>
+				</p><!--Math cards-->
+				<div class="collapse multi-collapse" id="math">
+					<div class="card card-body mainbodymt">
+						<div class="row">
+							<div class=" col-md-6 col-lg-4 pt-2">
+						<div class="card cardthumb">
+							<a href="en/simulations/area-builder_en.html" target="_blank">
+								<img class="card-img-top" src="images/thumbnails/area-builder.png" alt="Card image cap"></a>
+  							<div class="card-body">
+								<p class="card-text">
+								<a href="../PhET Teaching Resources/area-builder-html-guide.pdf" target="_blank"> Area Builder Teaching Resource</a></p>
+							</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+						<div class="card cardthumb" >
+							<a href="en/simulations/area-model-algebra_en.html" target="_blank">
+  								<img class="card-img-top" src="images/thumbnails/area-model-algebra.png" alt="Card image cap"></a>
+  							<div class="card-body">
+								<p class="card-text">
+									<a href="../PhET Teaching Resources/area-model-algebra-html-guide_en.pdf" target="_blank"> Area Model Algebra Teaching Resource </a></p>
+							</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+						<div class="card cardthumb" >
+							<a href="en/simulations/area-model-decimals_en.html" target="_blank">
+  								<img class="card-img-top" src="images/thumbnails/area-model-decimals.png" alt="Card image cap"></a>
+								<div class="card-body">
+								<p class="card-text">
+									Area Model Decimals</p>
+							</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+								<div class=" col-md-6 col-lg-4 pt-2">
+						<div class="card cardthumb">
+							<a href="en/simulations/area-model-introduction_en.html" target="_blank">
+  								<img class="card-img-top" src="images/thumbnails/area-model-introduction.png" alt="Card image cap"></a>
+  							<div class="card-body">
+								<p class="card-text">Area Model Introduction</p>
+							</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/area-model-multiplication_en.html" target="_blank">
+  										<img class="card-img-top" src="images/thumbnails/area-model-multiplication.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text"><a href="../PhET Teaching Resources/area-model-multiplication-html-guide_en.pdf" target="_blank"> Area Model Multiplication Teaching Resource</a></p>
+							</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/arithmetic_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/arithmetic.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/arithmetic-html-guide_en.pdf" target="_blank"> Arithmetic Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/balancing-act_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/balancing-act.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/balancing-act-html-guide_en.pdf" target="_blank"> Balancing Act Teaching Resource </a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/least-squares-regression_en.html" target="_blank">
+  										<img class="card-img-top" src="images/thumbnails/least-squares-regression.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/least-squares-regression-html-guide.pdf" target="_blank"> Least-Squares Regression Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/make-a-ten_en.html" target="_blank">
+  										<img class="card-img-top" src="images/thumbnails/make-a-ten.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/make-a-ten-html-guide_en.pdf" target="_blank"> Make a Ten Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/ohms-law_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/ohms-law.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/ohms-law-html-guide_en.pdf" target="_blank"> Ohm's Law Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/pendulum-lab_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/pendulum-lab.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/pendulum-lab-html-guide_en.pdf" target="_blank"> Pendulum Lab Teaching Resource </a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/trig-tour_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/trig-tour.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/trig-tour-html-guide.pdf" target="_blank">Trig Tour Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/wave-on-a-string_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/wave-on-a-string.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/wave-on-a-string-html-guide_en.pdf" target="_blank">Wave on a String Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+						</div>	<!--row-->
+					</div><!--main card-->
+				</div>
+			</div><!--column-->
+			<!--Chemistry section-->
+			<div class="col-12">
+				<!--Chemistry button-->
+				<p>
+					<a class="btn btnche shadow-none" data-toggle="collapse" href="#chem" role="button" aria-expanded="false" aria-controls="chem"><img src="images/chemistry-icon.png" alt="math icon"></a>
+				</p></div>
+				<!--Chemistry cards-->
+			<div class="col-md-12">
+				<div class="collapse multi-collapse" id="chem">
+					<div class="card card-body mainbodych ml-n6">
+						<div class="row">
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/acid-base-solutions_en.html" target="_blank">
+									<img class="card-img-top" src="images/thumbnails/acid-base-solutions.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text">
+										<a href="../PhET Teaching Resources/acid-base-solutions-html-guide.pdf" target="_blank"> Acid-Base Solutions Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/atomic-interactions_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/atomic-interactionsthumbnail.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/atomic-interactions-html-guide_en.pdf" target="_blank"> Atomic Interactions Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/balancing-chemical-equations_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/balancing-chemical-equations.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/balancing-chemical-equations-html-guide.pdf" target="_blank"> Balancing Chemical Equations Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/coulombs-law_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/coulombs-law.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/coulombs-law-html-guide_en.pdf" target="_blank"> Coulomb's Law Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/energy-forms-and-changes_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/energy-forms-and-changes.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/energy-forms-and-changes-html-guide_en.pdf" target="_blank"> Energy Forms and Changes Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/isotopes-and-atomic-mass_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/isotopes-and-atomic-mass.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/isotopes-and-atomic-mass-html-guide_en.pdf" target="_blank"> Isotopes and Atomic Mass Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->			
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/molarity_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/molarity.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/molarity-html-guide.pdf" target="_blank"> Molarity Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/molecules-and-light_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/molecules-and-light.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/molecules-and-light-html-guide.pdf" target="_blank"> Molecule and Light Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/ph-scale_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/ph-scale.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/ph-scale-basics-html-guide.pdf" target="_blank"> pH Scale Teaching Resource 1</a>
+									<a href="../PhET Teaching Resources/ph-scale-html-guide.pdf" target="_blank"> and 2</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/rutherford-scattering_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/rutherford-scattering.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/rutherford-scattering-html-guide_en.pdf" target="_blank"> Rutherford Scattering Teaching Resource </a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/states-of-matter_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/states-of-matter.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/states-of-matter-basics-html-guide_en.pdf" target="_blank"> States of Matter Teaching Resource 1</a><a href="../PhET Teaching Resources/states-of-matter-html-guide_en.pdf" target="_blank"> and 2</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/wave-on-a-string_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/wave-on-a-string.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/wave-on-a-string-html-guide_en.pdf" target="_blank">Wave on a String Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->	
+							
+						</div><!--row-->
+					</div><!--card-->
+				</div>
+			</div><!--column-->
+			<!--Earth Science section-->
+			<div class="col-12">
+				<p><!--Earth Science button-->
+					<a class="btn btnear shadow-none" data-toggle="collapse" href="#earth" role="button" aria-expanded="false" aria-controls="earth"><img src="images/earth-science-icon.png" class="mt-1" alt="earth science icon"></a>
+				</p>
+			<!--Earth Science cards-->
+				<div class="collapse multi-collapse" id="earth">
+					<div class="card card-body mainbodyea">
+						<div class="row">
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/molecules-and-light_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/molecules-and-light.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text">
+										<a href="../PhET Teaching Resources/molecules-and-light-html-guide.pdf" target="_blank"> Molecule and Light Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/ph-scale_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/ph-scale.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/ph-scale-basics-html-guide.pdf" target="_blank"> pH Scale Teaching Resource 1</a>
+									<a href="../PhET Teaching Resources/ph-scale-html-guide.pdf" target="_blank"> and 2</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/under-pressure_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/under-pressure.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/under-pressure-html-guide_en.pdf" target="_blank">Under Pressure Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/wave-interference_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/wave-interference.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/wave-interference-html-guide_en.pdf" target="_blank">Wave Interference Teaching Resource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->		
+						<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/wave-on-a-string_en.html" target="_blank">
+  									<img class="card-img-top" src="images/thumbnails/wave-on-a-string.png" alt="Card image cap"></a>
+  									<div class="card-body">
+										<p class="card-text"><a href="../PhET Teaching Resources/wave-on-a-string-html-guide_en.pdf" target="_blank">Wave on a String Teaching Resource</a></p>
+									</div>
+								</div><!--thumbnail card-->
+							</div>
+						</div><!--row-->	
+					</div><!--card-->
+				</div>
+			</div><!--column-->
+			<!--Biology Section-->
+			<div class="col-12">
+				<p><!--Biology button-->
+					<a class="btn btnbio mt-1 shadow-none" data-toggle="collapse" href="#bio" role="button" aria-expanded="false" aria-controls="bio"><img src="images/biology-icon.png" alt="biology icon"></a>
+				</p><!--Biology cards-->
+				<div class="collapse multi-collapse" id="bio">
+					<div class="card card-body mainbodybi">
+						<div class="row">
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/color-vision_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/color-vision.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/color-vision-html-guide.pdf" target="_blank">Color Vision Teaching Reasource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+							<div class="card cardthumb">
+								<a href="en/simulations/gene-expression-essentials_en.html" target="_blank">
+									<img class="card-img-top" src="images/thumbnails/gene-expression-essentials.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/gene-expression-essentials-html-guide_en.pdf" target="_blank">Gene Expression Essentials Teaching Reasource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+						<div class=" col-md-6 col-lg-4 pt-2">
+							<div class="card cardthumb">
+								<a href="en/simulations/neuron_en.html" target="_blank">
+									<img class="card-img-top" src="images/thumbnails/neuron.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/neuron-html-guide_en.pdf" target="_blank">Neuron Teaching Reasource</a></p>
+								</div>
+							</div><!--thumbnail card-->
+						</div><!--column-->	
+							<div class=" col-md-6 col-lg-4 pt-2">
+								<div class="card cardthumb">
+									<a href="en/simulations/ph-scale_en.html" target="_blank">
+										<img class="card-img-top" src="images/thumbnails/ph-scale.png" alt="Card image cap"></a>
+  								<div class="card-body">
+									<p class="card-text">
+									<a href="../PhET Teaching Resources/ph-scale-basics-html-guide.pdf" target="_blank"> pH Scale Teaching Resource 1</a>
+									<a href="../PhET Teaching Resources/ph-scale-html-guide.pdf" target="_blank"> and 2</a></p>
+								</div>
+								</div><!--thumbnail card-->
+							</div><!--column-->	
+						</div><!--row-->	
+					</div><!--card-->
+				</div>
+			</div><!--column-->
+		</div><!--row-->
+	</main>
+	
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
