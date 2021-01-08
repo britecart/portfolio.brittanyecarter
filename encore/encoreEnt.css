@@ -60,7 +60,7 @@ nav .current > a {
 }
 .button {
   width: 160px;
-  height: 50px;
+  height: 70px;
   border: 1px solid #272727;
   background-color: #45b6fe;
   font-size: 20px;
@@ -85,13 +85,13 @@ nav .current > a {
 }
 
 .button::before {
-  height: 50px;
+  height: 70px;
   width: 130px;
 }
 
 .button::after {
   width: 150px;
-  height: 30px;
+  height: 50px;
 }
 
 .noselect {
@@ -202,13 +202,30 @@ footer a:hover{
 	#home .buttonPl, #about .buttonPL{
 		margin-left: 27%;
 	}
+	#home .buttonPl{
+		margin-bottom: 2%;
+	}
 	#contact .buttonPl{
 		margin-left: 0;
 	}
 	#home{
-		padding-top: 25%;
+		padding-top: 10%;
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+	#home br{
+		display:none;
+	}
+	#home p{
+		padding-top: 1%;
+		padding-bottom: 1%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		text-align: justify;
+		
+	}
+	#home .p2{
+		text-align: center;
 	}
 	#first_name, #last_name, #email, #company{
 		width: 99%;
