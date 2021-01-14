@@ -54,7 +54,7 @@ body{
     to{background-position-x: 100%;}
 }
 header, main{
-    background-color: #fcc5e2;
+    background-color: #fde2f0;
 	
 }
 header, nav{
@@ -77,7 +77,7 @@ h3{
 }
 nav, footer{
 	background-color: #3c2346;
-	color:#fcc5e2;
+	color:#fde2f0;
 	
 }
 
@@ -100,12 +100,19 @@ nav .current > a {
 }
 
 li a{
-	color: #fcc5e2;
+	color: #fde2f0;
     text-decoration: none;
+}
+header a{
+	color:#3c2346;
+	text-decoration: none;
+}
+header a:hover{
+	text-decoration: underline;
 }
 
 nav .current, nav .current a, li:hover, li a:hover {
-  background-color: #fcc5e2;
+  background-color: #fde2f0;
   color: #3c2346;
 }
 #mobile{
@@ -263,18 +270,18 @@ footer p{
 	label::before{
 		height:3px;
        		width:50px;
-        background-color: #fcc5e2;
+        background-color: #fde2f0;
         display:inline-block;
         content:"";
-        box-shadow:0px -10px 0px 0px  #fcc5e2,
-             0px -20px 0px 0px #fcc5e2;
+        box-shadow:0px -10px 0px 0px  #fde2f0,
+             0px -20px 0px 0px #fde2f0;
         margin-right:4%;
         transition:all .5s;
         position:relative;
         opacity:0.8;
 	}
 	label{
-    	color:#fcc5e2;  
+    	color:#fde2f0;  
    	
 	margin-left: 85%;
 	
