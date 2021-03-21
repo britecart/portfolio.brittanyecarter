@@ -240,24 +240,23 @@ span.anchor {
 		margin-top: 70%;
 	}
 	.button {
-    width: 300px;
-    height: 50px;
-}
-.button::before {
-	width: 280px;
-  	height: 50px;
-}
-
-.button::after {
- 	width: 250px;
-  	height: 30px;
-}
+    		width: 300px;
+    		height: 50px;
+	}
+	.button::before {
+		width: 280px;
+  		height: 50px;
+	}
+	.button::after {
+ 		width: 250px;
+  		height: 30px;
+	}
 	#home{
 		padding-left: 5%;
 		padding-bottom: 45%;
 	}
 	.navbar-brand {
-    	width: 25%;
+    		width: 25%;
 	}
 	.navbar{
 		font-size: 22px;
@@ -269,11 +268,11 @@ span.anchor {
 		font-size: 19px;
 	}
 	span.anchor {
-    	margin-top: -40px; 
-    	display: block;
-   		height: 40px; 
-    	visibility: hidden;
-    	position: relative;
+    		margin-top: -25px; 
+    		display: block;
+   		height: 25px; 
+    		visibility: hidden;
+    		position: relative;
 	}
 	.close{
 		margin-left: 90%;
@@ -296,25 +295,26 @@ span.anchor {
 @media screen and (min-width:577px) and (max-width: 780px) {
 	#home .logo{
 		margin-top: 70%;
+		width: 80%;
 	}
-		.button {
-    width: 300px;
-    height: 50px;
-}
-.button::before {
-	width: 280px;
-  	height: 50px;
-}
+	.button {
+    		width: 300px;
+    		height: 50px;
+	}
+	.button::before {
+		width: 280px;
+  		height: 50px;
+	}
 
-.button::after {
- 	width: 250px;
-  	height: 30px;
-}
+	.button::after {
+ 		width: 250px;
+  		height: 30px;
+	}
 	.navbar{
 		margin-top: 20%;
 	}
 	.navbar-brand {
-    width: 12%;
+    		width: 12%;
 	}
 	.hide{
 		display: none;
@@ -324,11 +324,11 @@ span.anchor {
 		font-size: 16px;
 	}
 	span.anchor {
-    margin-top: -60px; 
-    display: block;
-    height: 60px; 
-    visibility: hidden;
-    position: relative;
+   		margin-top: -55px; 
+    		display: block;
+    		height: 55px; 
+    		visibility: hidden;
+    		position: relative;
 	}
 	.close{
 		margin-left: 92%;
