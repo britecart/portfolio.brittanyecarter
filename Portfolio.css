@@ -239,6 +239,9 @@ span.anchor {
 		width: 95%;
 		margin-top: 70%;
 	}
+	button{
+		font-size: 16px;
+	}
 	#home{
 		padding-left: 5%;
 		padding-bottom: 45%;
@@ -256,17 +259,17 @@ span.anchor {
 		font-size: 19px;
 	}
 	span.anchor {
-    margin-top: -60px; 
-    display: block;
-    height: 60px; 
-    visibility: hidden;
-    position: relative;
+    	margin-top: -40px; 
+    	display: block;
+   		height: 40px; 
+    	visibility: hidden;
+    	position: relative;
 	}
 	.close{
 		margin-left: 90%;
 	}
 	#portfolio .buttonPl{
-	margin-left: 5%;
+		margin-left: 20%;
 	}
 	#portfolio h2{
 		font-size: 27px;
@@ -284,6 +287,9 @@ span.anchor {
 	#home .logo{
 		margin-top: 70%;
 	}
+	button{
+		font-size: 16px;
+	}
 	.navbar{
 		margin-top: 20%;
 	}
@@ -298,9 +304,9 @@ span.anchor {
 		font-size: 16px;
 	}
 	span.anchor {
-    margin-top: -64px; 
+    margin-top: -60px; 
     display: block;
-    height: 64px; 
+    height: 60px; 
     visibility: hidden;
     position: relative;
 	}
