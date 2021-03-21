@@ -235,7 +235,7 @@ section::before {
 @media screen and (min-width:200px) and (max-width: 576px) {
 	#home .logo{
 		width: 95%;
-		margin-top: -10%;
+		margin-top: 0;
 	}
 	
 	section::before {
@@ -256,8 +256,9 @@ section::before {
   		height: 30px;
 	}
 	#home{
+		padding-top: 0;
 		padding-left: 5%;
-		padding-bottom: 45%;
+		padding-bottom: 50%;
 	}
 	.navbar-brand {
     		width: 25%;
@@ -291,8 +292,12 @@ section::before {
 }
 @media screen and (min-width:577px) and (max-width: 780px) {
 	#home .logo{
-		margin-top: -10%;
+		margin-top: 0%;
 		width: 80%;
+	}
+	#home{
+		padding-top: 0;
+		padding-bottom: 40%;
 	}
 	section::before {
     		height: 400px;
