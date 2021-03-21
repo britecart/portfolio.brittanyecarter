@@ -42,13 +42,13 @@ transform: translate(0, 0);
 
 #home{
 	margin-top: 0;
-	padding-top: 30%;
+	padding-top: 15%;
 	padding-bottom: 30%;
 	padding-left: 30%;
-    background: rgb(45,33,56);
-    background: linear-gradient(7deg, rgba(45,33,56,1) 45%, rgba(241,95,85,1) 72%, rgba(252,192,77,1) 100%);
-    background-size: 400% 400%;
-    animation: gradient 16s ease infinite;
+    	background: rgb(45,33,56);
+    	background: linear-gradient(7deg, rgba(45,33,56,1) 45%, rgba(241,95,85,1) 72%, rgba(252,192,77,1) 100%);
+    	background-size: 400% 400%;
+    	animation: gradient 16s ease infinite;
 }
 #home img{
 	width: 50%;
@@ -235,7 +235,7 @@ section::before {
 @media screen and (min-width:200px) and (max-width: 576px) {
 	#home .logo{
 		width: 95%;
-		margin-top: 0;
+		margin-top: -10%;
 	}
 	
 	section::before {
@@ -244,15 +244,15 @@ section::before {
     		display:block;
 	}
 	#home .button, #contact .button {
-    		width: 300px;
+    		width: 260px;
     		height: 50px;
 	}
 	#home .button::before, #contact .button::before {
-		width: 280px;
+		width: 240px;
   		height: 50px;
 	}
 	#home .button::after, #contact .button::after {
- 		width: 250px;
+ 		width: 210px;
   		height: 30px;
 	}
 	#home{
@@ -291,7 +291,7 @@ section::before {
 }
 @media screen and (min-width:577px) and (max-width: 780px) {
 	#home .logo{
-		margin-top: 0;
+		margin-top: -5%;
 		width: 80%;
 	}
 	section::before {
