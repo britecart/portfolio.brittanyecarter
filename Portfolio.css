@@ -239,15 +239,15 @@ span.anchor {
 		width: 95%;
 		margin-top: 70%;
 	}
-	.button {
+	#home .button, #contact .button {
     		width: 300px;
     		height: 50px;
 	}
-	.button::before {
+	#home .button::before, #contact .button::before {
 		width: 280px;
   		height: 50px;
 	}
-	.button::after {
+	#home .button::after, #contact .button::after {
  		width: 250px;
   		height: 30px;
 	}
@@ -268,11 +268,12 @@ span.anchor {
 		font-size: 19px;
 	}
 	span.anchor {
-    		margin-top: -25px; 
+    		margin-top: -70px; 
     		display: block;
-   		height: 25px; 
+   		height: 70px; 
+		padding-top: 40%;
     		visibility: hidden;
-    		position: relative;
+    		position: static;
 	}
 	.close{
 		margin-left: 90%;
@@ -297,16 +298,16 @@ span.anchor {
 		margin-top: 70%;
 		width: 80%;
 	}
-	.button {
+	#home .button, #contact .button {
     		width: 300px;
     		height: 50px;
 	}
-	.button::before {
+	#home .button::before, #contact .button::before {
 		width: 280px;
   		height: 50px;
 	}
 
-	.button::after {
+	#home .button::after, #contact .button::after {
  		width: 250px;
   		height: 30px;
 	}
@@ -324,11 +325,11 @@ span.anchor {
 		font-size: 16px;
 	}
 	span.anchor {
-   		margin-top: -75px; 
+   		margin-top: -65px; 
     		display: block;
-    		height: 75px; 
+    		height: 65px; 
     		visibility: hidden;
-    		position: relative;
+    		position: static;
 	}
 	.close{
 		margin-left: 92%;
