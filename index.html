@@ -1,40 +1,450 @@
 <!doctype html>
 <html>
 <head>
-<!--Brittany Carter-->
 <meta charset="utf-8">
-<meta name="description" content="Brittany E. Carter Portfolio">
-<meta name="author" content="Brittany Carter">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brittany E. Carter Portfolio</title>
-<link href="Portfolio.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto&display=swap" rel="stylesheet"> 
+<meta name="description" content="Brittany E. Carter">
+<meta name="author" content="Brittany E. Carter">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="portfolio.css" rel="stylesheet" type="text/css">
+<title>Brittany E. Carter</title>
 </head>
 
 <body>
-	<header>
-		<a href=index.html><h1>Brittany E. Carter</h1></a>
-		<h3>Web Developer</h3>
-	</header>
-	<nav>
-		<label for="navbox"></label>
-		<input type="checkbox" id="mobile">
-	  	<ul class="navlinks">
-		  
-    		  <li class="current"><a href="index.html">Home</a></li>
-		      <li><a href="about.html">About</a></li>
-			<li><a href="education.html">Education</a></li>
-			  <li><a href="mywork.html">My Work</a></li>
-			  <li><a href="resume.html">Resume</a></li>
-		  <li><a href="volunteering.html">Volunteering</a></li>
-		  <li><a href="contact.html">Contact</a></li>
-  		</ul>
+	<section id="home">
+			<img src="assets/logo.svg" class="img-fluid logo" alt="Brittany E Carter logo">
+		<a href="#about"><button class="button buttonPl">see my adventure</button></a>
+	
+	</section>
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top"> 
+		<a class="navbar-brand" href="index.html"><img src="assets/logo3.svg" alt="BEC Logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item hide">
+					<a class="nav-link" href="#experience">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item hide">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
-<main class="home">
-	    <h2>Welcome</h2>
-		<img src="image.png" alt="Brittany E. Carter"  title="Brittany E. Carter" class>
-		<p>Hi, I am a web developer student at Arizona State University and after completing my associates, I currently pursuing a bachelor’s in applied science. I am passionate about building amazing websites that will create a memorable user experience. In this website, you can find examples of my work and learn more about me. Click on the menu to begin exploring! </p>
-	</main>
-	<footer><p>Website Created by Brittany E. Carter</p></footer>
+<span class="anchor" id="about"></span>
+	<section id="about" class="tag container">
+		<div class="row inside">
+			<div class="col-sm col-md-4">
+				<img src="assets/photo.jpg" class="img-fluid w-75" alt="Picture of Brittany E. Carter">
+			</div><!-- col-->
+			<div class="col-sm col-md-8">
+				<h1>Hi</h1>
+				<p>I'm Brittany E. Carter, a coding adventurer, an open-minded conversationalist, amateur photographer, a bit of a risk taker but also a lover of cats. I have a thirst for new experiences because what’s life if not an opportunity to learn by doing something you never thought possible?<br><br>I started my journey in web development by the impulsive decision to try a coding class. I never expected coding to lead me to discovering my love of creating and watching ideas evolve from their simple inceptions.<br><br>I then began challenging internships with companies both big and small. My favorite projects have been ones that give others the opportunity to learn and get excited about a subject. It is my hope to continue to create websites that are not only easy to use but also allow for the growth of a community! Take my hand and let me show you something cool.</p>
+			</div><!-- col-->
+		</div><!-- row -->
+	</section>
+	<span class="anchor" id="experience"></span>
+	<section id="experience" class="tag container">
+		<div class="row">
+			<div class="col-sm col-md-6 col-lg-3">
+				<h1>Skills</h1>
+				<div class="container skills text-center mt-n1 ml-n1">
+					<div class="row">
+						<div class="col-4">
+							<img data-src="assets/html5.png" class="img-fluid lazy" alt="html5">
+							<p class="pt-1">HTML5</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/css3.png" class="img-fluid lazy" alt="css3"><p class="pt-1">CSS3</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/js.png" class="img-fluid lazy" alt="javascript"><p class="pt-1">JavaScript</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/bootstrap.png" class="img-fluid lazy pt-2" alt="bootstrap"><p class="pt-1">Bootstrap</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/pngegg.png" class="img-fluid lazy pt-2" alt="jQuery"><p>jQuery</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/angular.png" class="img-fluid lazy pt-2" alt= "Angular"><p>Angular</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/sass.png" class="img-fluid lazy pt-2 w-100" alt="sass"><p class="pt-1">SaSS</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/php.png" class="img-fluid lazy pt-2" alt="php"><p class="pt-3">PHP</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/mysql.png" class="img-fluid lazy pt-2 w-100" alt="mySQL"><p class="pt-3">MySQL</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/wordpress.png" class="img-fluid lazy pt-2" alt="Wordpress"><p class="pt-2">WordPress</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/GitHub-Mark-64px.png" class="img-fluid lazy pt-2" alt="GitHub"><p class="pt-2">GitHub</p>
+						</div><!-- col-->
+						<div class="col-4">
+							<img data-src="assets/photoshop.svg" class="img-fluid lazy pt-2" alt="Photoshop"><p class="pt-2">Photoshop</p>
+						</div><!-- col-->
+					</div><!-- row-->
+				</div><!-- container-->
+			</div><!-- col-->
+			<div class="col-sm col-md-6 col-lg-6">
+				<h1>Career</h1>
+				<p class="pt-1">Encore enterprise tax service| Web Designer December 2020 – Present<br>• Create a website using bootstrap incorporating their brand identity<br>• Use digital marketing knowledge to create marketing plan<br>• Maintain and update website information<br><br>Solar Spell| UI/UX Intern August 2020 – December 2020<br>• Created a PhET website with 33 simulations in bootstrap that expanded their library<br>• Demo the website to Solar Spell creator and collaborate with the team using Github<br>• Optimized existing websites with Angular to improve the user experience<br><br>Life Health and Wellness| Web Developer November 2019 – August 2020<br>• Created a website that improved their target audience's user experience<br>• Kept website up to date to ensure that all information was current</p>
+			</div><!-- col-->
+			<div class="col-sm col-md-6 offset-md-6 offset-lg-0 col-lg-3">
+				<h1>Education</h1>
+				<p>B.A.S.| Web Development <br> Arizona State University<br> GPA: 4.0 Dean’s List May 2021 <br>Phoenix, Arizona<br><br>A.A.S.| Web Development <br>Estrella Community College<br> GPA: 4.0 Theta Kappa Phi July 2019<br>Avondale, Arizona</p>
+			</div><!-- col-->
+		</div><!-- row -->
+	</section>
+<span class="anchor" id="portfolio"></span>
+	<section id="portfolio" class="tag container">
+		<h1>My Work</h1>
+		<div class="row">
+			<div class="col-sm col-md-6 col-lg-4">
+				<button class="hidden"><div class="card bg-dark">
+  					<img class="card-img img-fluid lazy" data-src="assets/araipastry.jpg" alt="Project Arai Pastry">
+  					<div class="card-img-overlay d-none">
+    				<h2 class="card-title">Arai Pastry</h2>
+    				<p class="card-text button buttonPl" data-toggle="modal" data-target=".modal1">Explore</p>
+  					</div><!-- card img-->
+				</div></button><!-- card-->
+				
+			</div><!-- col-->
+			<div class="col-sm col-md-6 col-lg-4">
+				<button class="hidden"><div class="card bg-dark">
+  					<img class="card-img img-fluid lazy" data-src="assets/phetsnip.jpg" alt="Project PhET">
+  					<div class="card-img-overlay d-none">
+    				<h2 class="card-title">PhET</h2>
+    				<p class="card-text button buttonPl" data-toggle="modal" data-target=".modal2">Explore</p>
+  					</div><!-- card img-->
+				</div></button><!-- card-->
+			</div><!-- col-->
+			<div class="col-sm col-md-6 col-lg-4">
+				<button class="hidden"><div class="card bg-dark">
+  					<img class="card-img img-fluid lazy" data-src="assets/encore.jpg" alt="Project Encore Tax Service">
+  					<div class="card-img-overlay d-none">
+    				<h2 class="card-title">Encore Tax Service</h2>
+    				<p class="card-text button buttonPl" data-toggle="modal" data-target=".modal3">Explore</p>
+  					</div><!-- card img-->
+				</div></button><!-- card-->
+			</div><!-- col-->
+			<div class="col-sm col-md-6 col-lg-4">
+				<button class="hidden"><div class="card bg-dark">
+  					<img class="card-img img-fluid lazy" data-src= "assets/desertikenobosnip.jpg" alt="Project Desert Ikenobo">
+  					<div class="card-img-overlay d-none">
+    				<h2 class="card-title">Desert Ikenobo</h2>
+    				<p class="card-text button buttonPl" data-toggle="modal" data-target=".modal4">Explore</p>
+  					</div><!-- card img-->
+				</div></button><!-- card-->
+			</div><!-- col-->
+			<div class="col-sm col-md-6 col-lg-4">
+				<button class="hidden"><div class="card bg-dark">
+  					<img class="card-img img-fluid lazy" data-src="assets/lhwphysnip.jpg"  alt="Life Health and Wellness Physique">
+  					<div class="card-img-overlay d-none">
+    				<h2 class="card-title">LHW Physique</h2>
+    				<p class="card-text button buttonPl" data-toggle="modal" data-target=".modal5">Explore</p>
+  					</div><!-- card img-->
+				</div></button><!-- card-->
+			</div><!-- col-->
+			<div class="col-sm col-md-6 col-lg-4">
+				<button class="hidden"><div class="card bg-dark">
+  					<img class="card-img img-fluid lazy" data-src="assets/javascripnip.jpg" alt="Project Javascript Showcase">
+  					<div class="card-img-overlay d-none">
+    				<h2 class="card-title">JS Showcase</h2>
+    				<p class="card-text button buttonPl" data-toggle="modal" data-target=".modal6">Explore</p>
+  					</div><!-- card img-->
+				</div></button><!-- card-->
+			</div><!-- col-->
+		</div><!-- row-->
+		<!-- Large modal -->
+
+
+	</section>
+	<section id="modals">
+		<!-- modal one -->
+		<div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container">
+					<div class="row">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></button>
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="AraiPastry/moodboard.jpg" class="pt-2 img-fluid" alt="Arai Pastry Moodboard">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<h1 class="pt-2">Arai Pastry</h1>
+							<p>This local bakery was ready to jump into digital marketing. With a focus on their unique Japanese French fusion cuisine and their inviting brand, a responsive website was created to showcase their sweets with an engaging user focused experience.</p>
+							<a href="AraiPastry/index.html" target="_blank"><button class="btn btn-dark pb-2">Launch</button></a>
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="AraiPastry/wireframes.jpg" class="pt-2 img-fluid" alt="Arai Pastry Wireframes">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="AraiPastry/desktop.jpg" class="pt-2 pb-2 img-fluid" alt="Arai Pastry on Desktop">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="AraiPastry/ipad.jpg" class="pt-2 pb-2 img-fluid" alt="Arai Pastry on IPad">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="AraiPastry/iPhone Xs.jpg" class="pt-2 pb-2 img-fluid" alt="Arai Pastry on IPhone">
+						</div><!-- col-->
+					</div><!-- row-->
+				</div><!-- container-->
+			</div>
+		</div>
+		<!-- modal two -->
+		<div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container">
+					<div class="row">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></button>
+						<div class="col-sm col-md-6 col-lg-4">
+							<p class="pt-2"><strong>Before</strong></p>
+							<img src="PhET/before.jpg" class="img-fluid" alt="PhET website before">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<h1 class="pt-2">PhET</h1>
+							<p> SolarSpell needed a user-friendly way to give teachers access to 33 PhET simulations. The new responsive website resembles an app with fast load times and approachable user interface on one webpage.</p>
+							<a href="PhET/PhET Simulations/index.html" target="_blank"><button class="btn btn-dark pb-2">Launch</button></a>
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<p class="pt-2"><strong>After</strong></p>
+							<img src="PhET/after.jpg" class="img-fluid" alt="PhET website now">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="PhET/desktop.jpg" class="pt-2 pb-2 img-fluid" alt="PhET on Desktop">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="PhET/ipad.jpg" class="pt-2 pb-2 img-fluid" alt="PhET on IPad">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="PhET/iPhone Xs.jpg" class="pt-2 pb-2 img-fluid" alt="PhET on IPhone">
+						</div><!-- col-->
+					</div><!-- row-->
+				</div><!-- container-->
+			</div>
+		</div>
+		<!-- modal three -->
+		<div class="modal fade modal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container">
+					<div class="row">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></button>
+						<div class="col-sm col-md-6 col-lg-4">
+							<p class="pt-2"><strong>Before</strong></p>
+							<img src="Enterprise/before.jpg" class="img-fluid" alt="Enterprise Tax Service website before">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<h1 class="pt-2">Enterprise Tax Service</h1>
+							<p>This company wanted to breathe new life into their digital marketing. This new easy to use, three-page responsive website gives the company the sleek professional feel and better aligns with their brand.</p>
+							<a href="Enterprise/index.html" target="_blank"><button class="btn btn-dark pb-2">Launch</button></a>
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<p class="pt-2"><strong>After</strong></p>
+							<img src="Enterprise/after.jpg" class="img-fluid" alt="Enterprise Tax Service website now">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Enterprise/desktop.jpg" class="pt-2 pb-2 img-fluid" alt="Enterprise Tax Service on Desktop">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Enterprise/ipad.jpg" class="pt-2 pb-2 img-fluid" alt="Enterprise Tax Service on IPad">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Enterprise/iPhone Xs.jpg" class="pt-2 pb-2 img-fluid" alt="Enterprise Tax Service on IPhone">
+						</div><!-- col-->
+					</div><!-- row-->
+				</div><!-- container-->
+			</div>
+		</div>
+		<!-- modal four -->
+		<div class="modal fade modal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container">
+					<div class="row">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></button>
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Desert/tree.jpg" class="pt-2 img-fluid" alt="Desert Ikenobo origin">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<h1 class="pt-2">Desert Ikenobo</h1>
+							<p>This school teaches the rare art of ikenobo, the origin of the more popular ikebana. This art form of flower arrangements takes main stage in this four-page website aimed to teach others about ikenobo as well as this school’s classes and teachers.</p>
+							<a href="Desert/index.html" target="_blank"><button class="btn btn-dark pb-2">Launch</button></a>
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Desert/wireframes.jpg" class="pt-2 img-fluid" alt="Desert Ikenobo Wireframes">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Desert/desktop.jpg" class="pt-2 pb-2 img-fluid" alt="Desert Ikenobo on Desktop">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Desert/ipad.jpg" class="pt-2 pb-2 img-fluid" alt="Desert Ikenobo on IPad">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Desert/iPhone Xs.jpg" class="pt-2 pb-2 img-fluid" alt="Desert Ikenobo on IPhone">
+						</div><!-- col-->
+					</div><!-- row-->
+				</div><!-- container-->
+			</div>
+		</div>
+		<!-- modal five -->
+		<div class="modal fade modal5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container">
+					<div class="row">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></button>
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="LHWPhysique/laserlikelipo.jpg" class="pt-3 img-fluid" alt="Laser-Like Lipo">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<h1 class="pt-2">LHW Physique</h1>
+							<p> With a unique weight loss service called “Laser-Like Lipo”, this company needed to promote as well as inform the community. The creation of this informative responsive website has led to a grant to help the company continue proving this service.</p>
+							<a href="LHWPhysique/index.html" target="_blank"><button class="btn btn-dark pb-2">Launch</button></a>
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="LHWPhysique/after.jpg" class="pt-3 img-fluid" alt="Laser-Like Lipo">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="LHWPhysique/desktop.jpg" class="pt-2 pb-2 img-fluid" alt="LHW Physique on Desktop">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="LHWPhysique/ipad.jpg" class="pt-2 pb-2 img-fluid" alt="LHW Physique on IPad">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="LHWPhysique/iPhone Xs.jpg" class="pt-2 pb-2 img-fluid" alt="LHW Physique on IPhone">
+						</div><!-- col-->
+					</div><!-- row-->
+				</div><!-- container-->
+			</div>
+		</div>
+		<!-- modal six -->
+		<div class="modal fade modal6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container">
+					<div class="row">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></button>
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Javascript/inspo.jpg" class="pt-3 img-fluid" alt="Javascript Showcase Inspiration">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<h1 class="pt-2">JS Showcase</h1>
+							<p> This responsive website was created to showcase this movie but also my JavaScripting skills. With form validation, API, countdown, personalized list and user information, this website shows my JavaScript knowledge in a fun and simple way.</p>
+							<a href="Javascript/index.html" target="_blank"><button class="btn btn-dark pb-2">Launch</button></a>
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Javascript/website.jpg" class="pt-3 img-fluid" alt="Javascript Showcase Website">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Javascript/desktop.jpg" class="pt-2 pb-2 img-fluid" alt="Javascript Showcase on Desktop">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Javascript/ipad.jpg" class="pt-2 pb-2 img-fluid" alt="Javascript Showcase on IPad">
+						</div><!-- col-->
+						<div class="col-sm col-md-6 col-lg-4">
+							<img src="Javascript/iPhone Xs.jpg" class="pt-2 pb-2 img-fluid" alt="Javascript Showcase on IPhone">
+						</div><!-- col-->
+					</div><!-- row-->
+				</div><!-- container-->
+			</div>
+		</div>
+	</section>
+	<span class="anchor" id="contact"></span>
+	<section id="contact" class="tag container">
+		<div class="row">
+			<div class="col-sm col-md-6 col-lg-4">
+				<a href="mailto:britecart@outlook.com"><button class="button buttonPl"> Send me a Message </button></a>
+			</div>
+			<div class="col-sm col-md-6 col-lg-4 links">
+				<a class="btn" href="https://www.linkedin.com/in/brittany-e-carter/" target="_blank">LinkedIn</a><br>
+				<a class="btn" href="https://www.behance.net/brittanycarter5/" target="_blank">Behance</a><br>
+				<a class="btn" href="https://about.me/brittany.carter" target="_blank">About.Me</a><br>
+				<a class="btn" href="https://github.com/britecart" target="_blank">Github</a>
+			</div>
+			<div class="col-sm col-md-6 offset-md-6 offset-lg-0 col-lg-4 pb-4">
+				<a href="mailto:britecart@outlook.com"><img data-src="assets/logo.svg" class="img-fluid lazy logo w-100 p-1" alt="Brittany E Carter logo"></a>
+			</div>
+			
+		</div>
+		<h5 class="pt-4">Created by Brittany E. Carter all rights reserved</h5>
+	</section>
+	
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+		<script>
+ $(function() {
+	 $('.lazy').lazy();
+});
+$(document).ready(function(){
+	var cards = $(".hidden");
+	var overlays = $(".card-img-overlay");
+	var navlink = $(".nav-item");
+	var modal = $(".modal");
+	
+	function cardToggle(i){
+		$(cards[i]).click(function(){
+    	$(overlays[i]).toggle();
+		$(overlays[i]).removeClass("d-none");
+  		});
+    }
+	function cardHover(i){
+		$(cards[i]).hover(function(){
+    	$(overlays[i]).toggle();
+		$(overlays[i]).removeClass("d-none");
+  		});
+    }
+	for (var i = 0; i < cards.length; i++) {
+		cardToggle(i);
+		cardHover(i);
+  	}
+	$(navlink).click (function(){
+    $('.navbar-collapse').collapse('hide');
+	});
+
+});
+
+$(document).on("scroll", function() {
+	var pageTop = $(document).scrollTop();
+	var pageBottom = pageTop + $(window).height();
+	var tags = $(".tag");
+	var navlink = $(".nav-item");
+  
+	for (var i = 0; i < tags.length; i++) {
+		var tag = tags[i];
+		var nav = navlink[i+1];
+		var remnav = navlink[i];
+
+		if ($(tag).position().top < pageBottom) {
+			$(tag).addClass("visible");
+			$(nav).addClass("current");
+			$(remnav).removeClass("current");
+			
+		} else {
+			$(tag).removeClass("visible");
+			$(nav).removeClass("current");
+			
+		}
+			
+	}
+});
+
+	</script>
+	<script type="text/javascript" src="jquery.lazy.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
