@@ -412,7 +412,7 @@ $(document).ready(function(){
 		cardHover(i);
   	}
 	$(navlink).click (function(){
-    $('.navbar-collapse').collapse('hide');
+    		$('.navbar-collapse').collapse('hide');
 	});
 
 });
@@ -421,7 +421,6 @@ $(document).on("scroll", function() {
 	var pageTop = $(document).scrollTop();
 	var pageBottom = pageTop + $(window).height();
 	var tags = $(".tag");
-	var navlink = $(".nav-item");
   
 	for (var i = 0; i < tags.length; i++) {
 		var tag = tags[i];
@@ -430,15 +429,10 @@ $(document).on("scroll", function() {
 
 		if ($(tag).position().top < pageBottom) {
 			$(tag).addClass("visible");
-			//$(nav).addClass("current");
-			//$(remnav).removeClass("current");
 			
 		} else {
-			$(tag).removeClass("visible");
-			//$(nav).removeClass("current");
-			
-		}
-			
+			$(tag).removeClass("visible");	
+		}		
 	}
 });
 
