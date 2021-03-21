@@ -30,7 +30,7 @@ h5{
 
 .tag {
 opacity: 0;
-transform: translate(0, 10vh);
+transform: translate(0, 5vh);
 transition: all 2s;
 }
 
