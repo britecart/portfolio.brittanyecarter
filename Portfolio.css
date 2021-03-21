@@ -273,7 +273,7 @@ span.anchor {
    		height: 70px; 
 		padding-top: 40%;
     		visibility: hidden;
-    		position: static;
+    		position: relative;
 	}
 	.close{
 		margin-left: 90%;
@@ -329,7 +329,7 @@ span.anchor {
     		display: block;
     		height: 75px; 
     		visibility: hidden;
-    		position: static;
+    		position: relative;
 	}
 	.close{
 		margin-left: 92%;
