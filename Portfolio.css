@@ -45,10 +45,10 @@ transform: translate(0, 0);
 	padding-top: 30%;
 	padding-bottom: 30%;
 	padding-left: 30%;
-    background: rgb(45,33,56);
-    background: linear-gradient(7deg, rgba(45,33,56,1) 45%, rgba(241,95,85,1) 72%, rgba(252,192,77,1) 100%);
-    background-size: 400% 400%;
-    animation: gradient 16s ease infinite;
+    	background: rgb(45,33,56);
+    	background: linear-gradient(7deg, rgba(45,33,56,1) 45%, rgba(241,95,85,1) 72%, rgba(252,192,77,1) 100%);
+    	background-size: 400% 400%;
+    	animation: gradient 16s ease infinite;
 }
 #home img{
 	width: 50%;
@@ -268,9 +268,9 @@ span.anchor {
 		font-size: 19px;
 	}
 	span.anchor {
-    		margin-top: -60px; 
+    		margin-top: -70px; 
     		display: block;
-   		height: 70px; 
+   		height: 80px; 
 		padding-top: 40%;
     		visibility: hidden;
     		position: relative;
