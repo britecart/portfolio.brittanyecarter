@@ -30,7 +30,7 @@ h5{
 
 .tag {
 opacity: 0;
-transform: translate(0, 5vh);
+transform: translate(0, 10vh);
 transition: all 2s;
 }
 
@@ -45,10 +45,10 @@ transform: translate(0, 0);
 	padding-top: 30%;
 	padding-bottom: 30%;
 	padding-left: 30%;
-    	background: rgb(45,33,56);
-    	background: linear-gradient(7deg, rgba(45,33,56,1) 45%, rgba(241,95,85,1) 72%, rgba(252,192,77,1) 100%);
-    	background-size: 400% 400%;
-    	animation: gradient 16s ease infinite;
+    background: rgb(45,33,56);
+    background: linear-gradient(7deg, rgba(45,33,56,1) 45%, rgba(241,95,85,1) 72%, rgba(252,192,77,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 16s ease infinite;
 }
 #home img{
 	width: 50%;
@@ -133,7 +133,6 @@ transform: translate(0, 0);
 }
 .navbar{
 	font-size: 32px;
-	border-bottom: 4px solid #fcc04d;
 	background: #2d2138;
 }
 
@@ -150,35 +149,34 @@ transform: translate(0, 0);
   	content: "\f0c9"; /* fa-bars, fa-navicon */
 	color:#fcc04d;
 }
-.navbar-dark a {
+.navbar-dark a{
 	color: #fcc04d !important;
 }
 .navbar-dark a:hover{
 	text-decoration: underline!important;
 	color: #f15f55 !important;
 }
-nav .current > a {
-   	pointer-events: none;
+
+.navbar-dark .navbar-nav .active>.nav-link,.navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link.show,.navbar-dark .navbar-nav .show>.nav-link{
+	pointer-events: none;
    	cursor: default;
 	text-decoration: underline;
 	color: #f15f55 !important;
 }
-nav a:active{
-	color: #f15f55 !important;
-}
+
+
 section{
     padding-top: 7%;
     padding-right: 3%;
     padding-left: 3%;
     padding-bottom: 7%;
     text-align: justify;
+	margin-bottom: 20px;
 }
-span.anchor {
-    margin-top: -53px; /* height of nav, in this case 54px */
-    display: block;
-    height: 53px; /* height of nav, in this case 54px */
-    visibility: hidden;
-    position: relative;
+section::before {
+    height: 70px;
+    content: "";
+    display:block;
 }
 #contact .buttonPl{
 	margin-top: 7%;
@@ -237,26 +235,22 @@ span.anchor {
 @media screen and (min-width:200px) and (max-width: 576px) {
 	#home .logo{
 		width: 95%;
-		margin-top: 70%;
+		margin-top: 0;
 	}
-	#home .button, #contact .button {
-    		width: 300px;
-    		height: 50px;
+	section::before {
+    height: 320px;
+    content: "";
+    display:block;
 	}
-	#home .button::before, #contact .button::before {
-		width: 280px;
-  		height: 50px;
-	}
-	#home .button::after, #contact .button::after {
- 		width: 250px;
-  		height: 30px;
+	button{
+		font-size: 16px;
 	}
 	#home{
 		padding-left: 5%;
 		padding-bottom: 45%;
 	}
 	.navbar-brand {
-    		width: 25%;
+    	width: 25%;
 	}
 	.navbar{
 		font-size: 22px;
@@ -266,14 +260,6 @@ span.anchor {
 	}
 	p{
 		font-size: 19px;
-	}
-	span.anchor {
-    		margin-top: -80px; 
-    		display: block;
-   		height: 80px; 
-		padding-top: 40%;
-    		visibility: hidden;
-    		position: relative;
 	}
 	.close{
 		margin-left: 90%;
@@ -295,41 +281,24 @@ span.anchor {
 }
 @media screen and (min-width:577px) and (max-width: 780px) {
 	#home .logo{
-		margin-top: 70%;
-		width: 80%;
+		margin-top: 0;
 	}
-	#home .button, #contact .button {
-    		width: 300px;
-    		height: 50px;
+	section::before {
+    height: 400px;
+    content: "";
+    display:block;
 	}
-	#home .button::before, #contact .button::before {
-		width: 280px;
-  		height: 50px;
-	}
-
-	#home .button::after, #contact .button::after {
- 		width: 250px;
-  		height: 30px;
+	button{
+		font-size: 16px;
 	}
 	.navbar{
 		margin-top: 20%;
 	}
 	.navbar-brand {
-    		width: 12%;
-	}
-	.hide{
-		display: none;
-		opacity: 0 !important;
+    width: 12%;
 	}
 	p{
 		font-size: 16px;
-	}
-	span.anchor {
-   		margin-top: -55px; 
-    		display: block;
-    		height: 75px; 
-    		visibility: hidden;
-    		position: relative;
 	}
 	.close{
 		margin-left: 92%;

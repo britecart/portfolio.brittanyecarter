@@ -6,13 +6,14 @@
 <meta name="author" content="Brittany E. Carter">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="portfolio.css" rel="stylesheet" type="text/css">
 <title>Brittany E. Carter</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
 	<section id="home">
 			<img src="assets/logo.svg" class="img-fluid logo" alt="Brittany E Carter logo">
 		<a href="#about"><button class="button buttonPl">see my adventure</button></a>
@@ -43,7 +44,7 @@
 			</ul>
 		</div>
 	</nav>
-<span class="anchor" id="about"></span>
+
 	<section id="about" class="tag container">
 		<div class="row inside">
 			<div class="col-sm col-md-4">
@@ -55,7 +56,7 @@
 			</div><!-- col-->
 		</div><!-- row -->
 	</section>
-	<span class="anchor" id="experience"></span>
+
 	<section id="experience" class="tag container">
 		<div class="row">
 			<div class="col-sm col-md-6 col-lg-3">
@@ -112,7 +113,7 @@
 			</div><!-- col-->
 		</div><!-- row -->
 	</section>
-<span class="anchor" id="portfolio"></span>
+
 	<section id="portfolio" class="tag container">
 		<h1>My Work</h1>
 		<div class="row">
@@ -362,7 +363,7 @@
 			</div>
 		</div>
 	</section>
-	<span class="anchor" id="contact"></span>
+
 	<section id="contact" class="tag container">
 		<div class="row">
 			<div class="col-sm col-md-6 col-lg-4">
@@ -407,7 +408,7 @@ $(document).ready(function(){
   		});
     }
 	for (var i = 0; i < cards.length; i++) {
-		//cardToggle(i);
+		cardToggle(i);
 		cardHover(i);
   	}
 	$(navlink).click (function(){
@@ -429,12 +430,12 @@ $(document).on("scroll", function() {
 
 		if ($(tag).position().top < pageBottom) {
 			$(tag).addClass("visible");
-			$(nav).addClass("current");
-			$(remnav).removeClass("current");
+			//$(nav).addClass("current");
+			//$(remnav).removeClass("current");
 			
 		} else {
 			$(tag).removeClass("visible");
-			$(nav).removeClass("current");
+			//$(nav).removeClass("current");
 			
 		}
 			
