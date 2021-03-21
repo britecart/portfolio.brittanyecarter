@@ -324,9 +324,9 @@ span.anchor {
 		font-size: 16px;
 	}
 	span.anchor {
-   		margin-top: -55px; 
+   		margin-top: -75px; 
     		display: block;
-    		height: 55px; 
+    		height: 75px; 
     		visibility: hidden;
     		position: relative;
 	}
