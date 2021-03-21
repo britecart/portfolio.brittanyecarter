@@ -239,7 +239,7 @@ span.anchor {
 		width: 95%;
 		margin-top: 70%;
 	}
-	button{
+	#home a{
 		font-size: 14px;
 	}
 	#home{
@@ -287,7 +287,7 @@ span.anchor {
 	#home .logo{
 		margin-top: 70%;
 	}
-	button{
+	#home a{
 		font-size: 14px;
 	}
 	.navbar{
