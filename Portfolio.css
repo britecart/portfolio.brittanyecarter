@@ -268,7 +268,7 @@ span.anchor {
 		font-size: 19px;
 	}
 	span.anchor {
-    		margin-top: -70px; 
+    		margin-top: -60px; 
     		display: block;
    		height: 70px; 
 		padding-top: 40%;
@@ -325,9 +325,9 @@ span.anchor {
 		font-size: 16px;
 	}
 	span.anchor {
-   		margin-top: -65px; 
+   		margin-top: -55px; 
     		display: block;
-    		height: 65px; 
+    		height: 75px; 
     		visibility: hidden;
     		position: static;
 	}
