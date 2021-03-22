@@ -285,7 +285,7 @@ section::before {
 	#portfolio h2{
 		font-size: 27px;
 	}
-	#contact .links{
+	#contact .links, #contact .resume{
 		padding-top: 10%;
 		padding-bottom: 10%;
 		text-align: left;
@@ -333,7 +333,7 @@ section::before {
 	.close{
 		margin-left: 92%;
 	}
-	#contact .buttonPl{
+	#contact .buttonPl, #contact .resume {
 		margin-left: 20%;
 	}
 	#contact .links, #contact h5{
