@@ -134,6 +134,7 @@ transform: translate(0, 0);
 .navbar{
 	font-size: 32px;
 	background: #2d2138;
+	border-bottom: 2px solid #fcc04d;
 }
 
 .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
