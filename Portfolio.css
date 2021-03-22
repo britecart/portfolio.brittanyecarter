@@ -228,6 +228,9 @@ section::before {
 .btn-dark:hover{
 	background-color: rgba(45, 33, 56, 0.6) !important;
 }
+#contact{
+	padding-top:20%;
+}
 #contact .links{
 	text-align: center;
 }
@@ -258,7 +261,7 @@ section::before {
 	#home{
 		padding-top: 0;
 		padding-left: 5%;
-		padding-bottom: 50%;
+		padding-bottom: 60%;
 	}
 	.navbar-brand {
     		width: 25%;
