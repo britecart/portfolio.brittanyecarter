@@ -23,7 +23,7 @@ h5{
 	text-align: center;
 	font-size: 11px;
 }
-#home section {
+#home section, #contact section {
 	height: 100vh;
 	padding: 1%;
 }
