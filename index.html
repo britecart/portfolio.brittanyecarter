@@ -52,7 +52,7 @@
 			</div><!-- col-->
 			<div class="col-sm col-md-8">
 				<h1>Hi</h1>
-				<p>I'm Brittany E. Carter, a coding adventurer, an open-minded conversationalist, amateur photographer, a bit of a risk taker but also a lover of cats. The thought: what’s life if not an opportunity to learn by doing something you never thought possible, has given me a thirst for new experiences<br><br>My web development journey started with the impulsive decision to try a coding class. Coding lead me to discover my love of creating and watching ideas evolve from their simple inceptions.<br><br>Then began challenging internships with companies both big and small. My favorite projects have been ones that give others the opportunity to learn and get excited about a subject. It is my hope to continue to create websites that are not only easy to use but also allow for the growth of a community! Take my hand and let me show you something cool.</p>
+				<p>I'm Brittany E. Carter, a coding adventurer, an open-minded conversationalist, amateur photographer, a bit of a risk taker but also a lover of cats. What’s life if not an opportunity to learn by doing something you never thought possible? This thought has given me a thirst for new experiences<br><br>My web development journey started with the impulsive decision to try a coding class. Coding lead me to discover my love of creating and watching ideas evolve from their simple inceptions.<br><br>Then began challenging internships with companies both big and small. My favorite projects have been ones that give others the opportunity to learn and get excited about a subject. It is my hope to continue to create websites that are not only easy to use but also allow for the growth of a community! Take my hand and let me show you something cool.</p>
 			</div><!-- col-->
 		</div><!-- row -->
 	</section>
@@ -285,7 +285,7 @@
 						</div><!-- col-->
 						<div class="col-sm col-md-6">
 							<h1 class="pt-2">Desert Ikenobo</h1>
-							<p>This school teaches the rare art of ikenobo, the origin of the more popular ikebana. This art form of flower arrangements takes main stage in this four-page website aimed to teach others about ikenobo as well as this school’s classes and teachers.This website uses HTML5 and CSS3.</p>
+							<p>This school teaches the rare art of ikenobo, the origin of the more popular ikebana. This art form of flower arrangements takes main stage in this four-page website aimed to teach others about ikenobo as well as this school’s classes and teachers. This website uses HTML5 and CSS3.</p>
 							<a href="Desert/index.html" target="_blank"><button class="btn btn-dark pb-2">Launch</button></a>
 						</div><!-- col-->
 						<div class="col-sm col-md-6">
@@ -345,7 +345,7 @@
 						</div><!-- col-->
 						<div class="col-sm col-md-6">
 							<h1 class="pt-2">JS Showcase</h1>
-							<p> This responsive website gave me the opportunity to flex my JavaScript muscle. Not only does is it a fan made express a love for the award-winning movie, but it also has form validation, API, a countdown, user information, and personalize list creation. This website displays JavaScript skill in a fun and simple way.This website uses Bootstrap, Javascript, jQuery, HTML5, and CSS3.</p>
+							<p> This responsive website gave me the opportunity to flex my JavaScript muscle. Not only does is it a fan made express a love for the award-winning movie, but it also has form validation, API, a countdown, user information, and personalize list creation. This website displays JavaScript skill in a fun simple way using Bootstrap, Javascript, jQuery, HTML5, and CSS3.</p>
 							<a href="Javascript/index.html" target="_blank"><button class="btn btn-dark pb-2">Launch</button></a>
 						</div><!-- col-->
 						<div class="col-sm col-md-6">
@@ -398,12 +398,6 @@ $(document).ready(function(){
 	var navlink = $(".nav-item");
 	var modal = $(".modal");
 	
-	function cardToggle(i){
-		$(cards[i]).click(function(){
-    	$(overlays[i]).toggle();
-		$(overlays[i]).removeClass("d-none");
-  		});
-    }
 	function cardHover(i){
 		$(cards[i]).hover(function(){
     	$(overlays[i]).toggle();
@@ -411,7 +405,6 @@ $(document).ready(function(){
   		});
     }
 	for (var i = 0; i < cards.length; i++) {
-		//cardToggle(i);
 		cardHover(i);
   	}
 	$(navlink).click (function(){
