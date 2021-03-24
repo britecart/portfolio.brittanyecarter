@@ -182,6 +182,9 @@ section::before {
     content: "";
     display:block;
 }
+#about img{
+	border: 2px solid #fcc04d;
+}
 #contact .buttonPl{
 	margin-top: 7%;
 }
