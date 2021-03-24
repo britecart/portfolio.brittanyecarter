@@ -237,7 +237,7 @@ section::before {
 	max-width:1200px;
 }
 .modal-content{
-	background-color: #fdecca;
+	background-color: #fffefc;
 }
 .btn-dark{
 	background-color: #2d2138 !important;
@@ -287,8 +287,8 @@ section::before {
 	.navbar{
 		font-size: 25px;
 	}
-	#about img{
-		padding-bottom: 5%;
+	#about h1{
+		padding-top: 5%;
 	}
 	#modals h1{
 		text-align: left;
