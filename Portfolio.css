@@ -281,6 +281,9 @@ section::before {
 		padding-left: 5%;
 		padding-bottom: 60%;
 	}
+	#home .buttonPl{
+		margin-left: 2%;
+	}
 	.navbar-brand {
     		width: 25%;
 	}
