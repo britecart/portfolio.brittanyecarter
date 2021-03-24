@@ -16,8 +16,11 @@ h1, h2{
 	color: #f15f55;
 }
 p, h5{
-	color: #fcc04d;
+	color: #fdecca;
 	font-family: 'Lato', sans-serif;
+}
+em{
+	color: #fcc04d;
 }
 h5{
 	text-align: center;
@@ -151,7 +154,7 @@ transform: translate(0, 0);
 	color:#fcc04d;
 }
 .navbar-dark a{
-	color: #fcc04d !important;
+	color: #fdecca !important;
 }
 .navbar-dark a:hover{
 	text-decoration: underline!important;
@@ -183,7 +186,7 @@ section::before {
 	margin-top: 7%;
 }
 #contact a{
-	color: #fcc04d;
+	color: #fdecca;
 	font-size: 20px;
 	
 }
@@ -214,13 +217,24 @@ section::before {
 #modals h1, #modals p{
 	color: #2d2138;
 }
+#modals p{
+	padding-top: 3%;
+	padding-right: 5%;
+}
 .close{
-		margin-left: 95%;
+	margin-left: 97%;
 	}
 #modals i {
-  		font-family: FontAwesome;
-		font-size: 20px;
-  		content: "\f057";
+  	font-family: FontAwesome;
+	font-size: 20px;
+  	content: "\f057";
+}
+
+.modal-lg{
+	max-width:1200px;
+}
+.modal-content{
+	background-color: #fdecca;
 }
 .btn-dark{
 	background-color: #2d2138 !important;
@@ -273,11 +287,17 @@ section::before {
 	#about img{
 		padding-bottom: 5%;
 	}
+	#modals h1{
+		text-align: left;
+	}
+	#modals p{
+		padding-right: 2%;
+	}
 	p{
 		font-size: 19px;
 	}
 	.close{
-		margin-left: 90%;
+		margin-left: 92%;
 	}
 	#portfolio .buttonPl{
 		margin-left: 20%;
@@ -327,11 +347,14 @@ section::before {
 	.navbar-brand {
     		width: 12%;
 	}
+	#modals h1{
+		text-align: left;
+	}
 	p{
 		font-size: 16px;
 	}
 	.close{
-		margin-left: 92%;
+		margin-left: 96%;
 	}
 	#contact .buttonPl, #contact .resume {
 		margin-left: 20%;
