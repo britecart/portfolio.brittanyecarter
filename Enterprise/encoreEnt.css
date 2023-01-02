@@ -61,6 +61,9 @@ nav .current > a {
 .button {
   width: 160px;
   height: 70px;
+  color: #272727 !important;
+  -webkit-text-fill-color: #272727;
+  -webkit-opacity: 1;
   border: 1px solid #272727;
   background-color: #45b6fe;
   font-size: 20px;
@@ -74,7 +77,9 @@ nav .current > a {
   transition: 1s;
 }
 .button a{
-	color: #272727;
+	color: #272727 !important;
+	-webkit-opacity: 1;
+	-webkit-text-fill-color: #272727;
 }
 .button::before, .button::after {
   position: absolute;
