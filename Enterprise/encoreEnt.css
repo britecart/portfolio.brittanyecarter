@@ -69,7 +69,7 @@ nav .current > a {
   font-size: 20px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
   position: relative;
