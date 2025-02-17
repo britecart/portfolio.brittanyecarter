@@ -49,9 +49,9 @@ transform: translate(0, 0);
 	padding-bottom: 30%;
 	padding-left: 30%;
     	background: rgb(45,33,56);
-    	background: linear-gradient(7deg, rgba(45,33,56,1) 45%, rgba(241,95,85,1) 72%, rgba(252,192,77,1) 100%);
+    	/* background: linear-gradient(7deg, rgba(45,33,56,1) 45%, rgba(241,95,85,1) 72%, rgba(252,192,77,1) 100%);
     	background-size: 400% 400%;
-    	animation: gradient 16s ease infinite;
+    	animation: gradient 16s ease infinite; */
 }
 #home img{
 	width: 50%;
